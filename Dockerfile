@@ -1,5 +1,5 @@
 FROM ubuntu
-ADD sumodockercreation.sh ~/myproject/MyNewRepo/DockerBuild/sumodockercreation.sh
+#ADD sumodockercreation.sh ~/myproject/MyNewRepo/DockerBuild/sumodockercreation.sh
 RUN chmod +x ~/myproject/MyNewRepo/DockerBuild/sumodockercreation.sh
 CMD ["/myproject/MyNewRepo/DockerBuild/sumodockercreation.sh"]
 RUN docker build --tag ${LOCAL_IMAGE_NAME} .
